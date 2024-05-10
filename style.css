@@ -41,3 +41,38 @@ body
     transform: translate(0,-2%);
 }
 /* index */
+/* takimimiz */
+.main-img {
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+    object-position: center;
+}
+#takim-tarihce
+{
+    color: azure;
+    background-color: crimson;
+}
+#takim-basarilar
+{
+    background-color: #400080;
+    color: azure;
+}
+#takim-kadro
+{
+    background-color: crimson;
+    color: azure;
+    text-align: center;
+    padding: 1rem;
+}
+.takim-card
+{
+    height: 30vh;
+    border-radius: 10px;
+    border: 5px solid #400080;
+    /* background-color: #FFEBB2; */
+    background-color: #400080;
+    color: azure;
+}
+
+/* takimimiz */
