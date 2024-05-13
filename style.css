@@ -80,3 +80,27 @@ body
 }
 
 /* sehrim */
+
+/* ilgialanlari */
+
+.ilgialanlari-card-img
+{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to bottom, #DFD0B8, #948979);
+    opacity: 0.2;  /* Overlay rengi ve opaklığı */
+    z-index: 1; /* Resimden daha küçük z-index değeri */
+  }
+
+/* ilgialanlari */
