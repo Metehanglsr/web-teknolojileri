@@ -29,6 +29,41 @@ body
         height: 32vh;
     }
 }
+@media (max-width: 768px) {
+    .main-row__item
+    {
+    height: 50px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    top: 50px !important;
+    z-index: 60;
+    }
+    .sidebar ul
+    {
+        margin: 0 !important;
+        border: none !important;
+    }
+    .sidebar
+    {
+        margin: 0 !important;
+        padding: 0 !important; 
+    }
+    .sidebar ul li
+    {
+        border: none !important;        
+    }
+    .sidebar ul li a
+    {
+        padding: 5px !important;
+        margin: 0 !important;
+    }
+    .sidebar img
+    {
+        display: none;
+    }
+}
 .main-card__item:hover
 {
     transition-duration: .4s;
@@ -99,8 +134,72 @@ body
     width: 100%;
     height: 100%;
     background:linear-gradient(to bottom, #DFD0B8, #948979);
-    opacity: 0.2;  /* Overlay rengi ve opaklığı */
-    z-index: 1; /* Resimden daha küçük z-index değeri */
+    opacity: 0.2;
+    z-index: 1;
   }
 
 /* ilgialanlari */
+
+/* ozgecmis */
+.main-sidebar__img
+{
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+}
+
+.main-container img
+{
+    height: 50vh;
+}
+
+.sidebar
+{
+    align-self: center;
+}
+.sidebar ul
+{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.main-row__item
+{
+    height: 100vh;
+}
+
+.ozgecmis-social a
+{
+    color: orange;
+}
+
+.ozgecmis-social a:hover
+{
+    opacity: 0.7;
+}
+#list-example a
+{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: large;
+}
+#list-example a:hover
+{
+    opacity: 0.7;
+}
+
+.school-link
+{
+    color: orange !important;
+    text-decoration: none;
+
+}
+.school-link:hover
+{
+    opacity: 0.7;
+}
+
+/* ozgecmis */
