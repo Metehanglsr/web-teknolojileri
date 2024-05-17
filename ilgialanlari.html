@@ -56,7 +56,7 @@
         </div>
     </nav>
 
-    <main class="pt-5">
+    <section class="pt-5">
         <div class="pt-5 row col-12 g-0">
             <div class="card rounded col-sm-6 img-overlay " style="background-color: #DFD0B8">
                 <img src="img/witcher.jpg" alt="" class="ilgialanlari-card-img">
@@ -87,13 +87,27 @@
                 </div>
             </div>
         </div>
-    </main>
-
+    </section>
+    <section>
+        <div class="container my-5">
+            <div class="card">
+                <div class="card-body row g-5">
+                    <h5 class="card-text col-md-6">Her butona tıkladığınızda yazdığınız kelimeyle ilgili filmlerle ilgili bilgiler gelicektir</h5>
+                    <div class="col-md-3">
+                        <input type="text" name="arananKelime" id="arananKelime" class="form-control">
+                    </div>
+                    <button class="btn btn-outline-primary col-md-3" onclick="showRandomMovie()">Tıkla</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="movieResult" class="container my-5"></div>
+    
     <footer class="py-4 mt-5 bg-dark text-white">
         <div class="container text-center">
             <span style="font-size: larger;">Metehan GÜLŞER</span>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script/ilgiAlanlari.js"></script>
 </body>
 </html>

@@ -67,7 +67,12 @@ body
 .main-card__item:hover
 {
     transition-duration: .4s;
-    transform: translate(0,-2%);
+    transform: translate(0,-1%);
+}
+.main-card__item .card-body
+{
+    height: 25vh !important;
+    background-color: aliceblue;
 }
 /* index */
 
