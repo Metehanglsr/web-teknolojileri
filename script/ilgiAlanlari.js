@@ -1,7 +1,7 @@
 async function showRandomMovie() {
     const searchKeyword = document.getElementById("arananKelime").value;
     console.log(searchKeyword);
-    const response = await fetch(`http://www.omdbapi.com/?s=${searchKeyword}&apikey=f7b7f0ba`);
+    const response = await fetch(`https://www.omdbapi.com/?s=${searchKeyword}&apikey=f7b7f0ba`);
     const data = await response.json();
 
     if (data.Response === "False") {
@@ -12,7 +12,7 @@ async function showRandomMovie() {
     const movies = data.Search;
     const randomMovie = movies[Math.floor(Math.random() * movies.length)];
 
-    const detailedResponse = await fetch(`http://www.omdbapi.com/?i=${randomMovie.imdbID}&apikey=f7b7f0ba`);
+    const detailedResponse = await fetch(`https://www.omdbapi.com/?i=${randomMovie.imdbID}&apikey=f7b7f0ba`);
     const detailedData = await detailedResponse.json();
 
     const movieResult = document.getElementById("movieResult");
