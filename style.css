@@ -86,16 +86,16 @@ body
 #takim-tarihce
 {
     color: azure;
-    background-color: crimson;
+    background-color: crimson !important;
 }
 #takim-basarilar
 {
-    background-color: #400080;
+    background-color: #400080 !important;
     color: azure;
 }
 #takim-kadro
 {
-    background-color: crimson;
+    background-color: crimson !important;
     color: azure;
     text-align: center;
     padding: 1rem;
@@ -104,10 +104,13 @@ body
 {
     height: 35vh;
     border-radius: 10px;
-    border: 5px solid #400080;
-    /* background-color: #FFEBB2; */
-    background-color: #400080;
+    border: 5px solid #400080 !important;
+    background-color: #400080 !important;
     color: azure;
+}
+.takim-card .card-body
+{
+    background-color: #400080;
 }
 
 /* takimimiz */
