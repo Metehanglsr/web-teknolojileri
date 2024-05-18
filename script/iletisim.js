@@ -1,35 +1,30 @@
 function FormuKontrolEt(form)
 {
     var name = form.name.value;
-    var surname = form.name.value;
+    var surname = form.surname.value;
     var email = form.mail.value;
     var hobiler = form.elements["hobiler[]"];
     var secildiMi = false;
-    var okul = form.okul.value;
     var egitim = form.egitim.value;
+    // // var sehir = form.sehir.value;
     if(egitim == "")
     {
         alert("Egitim seviyenizi seçiniz");
         return false;
     }
-    if(okul == "")
-    {
-        alert("Okul seçiniz!");
-        return false;
-    }
     for(var i=0;i<hobiler.length;i++)
     {
-    if(hobiler[i].checked)
-    {
-        secildiMi = true;
-    }
+        if(hobiler[i].checked)
+        {
+            secildiMi = true;
+        }
     }
     if(!secildiMi)
     {
         alert("En az bir hobi seçiniz.");
         return false;
     }
-    // var x = form.hobi.value;
+    var x = form.hobi.value;
     if (name == "" || surname == "") {
         alert("İsim-Soyad alanı boş bıraklımamalıdır");
         return false;
@@ -43,4 +38,10 @@ function FormuKontrolEt(form)
         alert("epostanın formatı yanlış!");
         return false;
     }
+    if(sehir=="")
+        {
+            alert("lutfen sehir seciniz!");
+            return false;
+        }
+    return true;
 }
