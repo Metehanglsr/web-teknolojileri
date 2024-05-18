@@ -6,8 +6,11 @@ function FormuKontrolEt(form)
     var hobiler = form.elements["hobiler[]"];
     var secildiMi = false;
     var egitim = form.egitim.value;
-    // // var sehir = form.sehir.value;
-    if(egitim == "")
+    var sehir = form.sehir.value;
+    if (name == "" || surname == "") {
+        alert("İsim-Soyad alanı boş bıraklımamalıdır");
+        return false;
+    }    if(egitim == "")
     {
         alert("Egitim seviyenizi seçiniz");
         return false;
@@ -22,11 +25,6 @@ function FormuKontrolEt(form)
     if(!secildiMi)
     {
         alert("En az bir hobi seçiniz.");
-        return false;
-    }
-    var x = form.hobi.value;
-    if (name == "" || surname == "") {
-        alert("İsim-Soyad alanı boş bıraklımamalıdır");
         return false;
     }
     if (email.indexOf('@') === -1) {
